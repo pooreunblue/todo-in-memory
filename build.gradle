@@ -2,7 +2,7 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '4.1.0'
 	id 'io.spring.dependency-management' version '1.1.7'
-	id 'com.diffplug.spotless' version '6.25.0'
+	id 'com.diffplug.spotless' version '7.2.1'
 }
 
 group = 'com.asdf'
@@ -54,7 +54,7 @@ spotless {
 	// Java 파일에 대한 포매팅 설정을 추가합니다.
 	java {
 		// Google Java Format 적용
-		googleJavaFormat('1.22.0').aosp().reflowLongStrings()
+		googleJavaFormat('1.30.0').aosp().reflowLongStrings()
 	}
 }
 
